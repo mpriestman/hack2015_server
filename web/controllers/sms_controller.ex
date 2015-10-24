@@ -1,7 +1,7 @@
 defmodule Hack2015Server.SmsController do
   use Hack2015Server.Web, :controller
 
-	def receive_sms(conn, %{"from" => from, "to" => to, "content" => content, "msg_id" => msg_id}) do
+	def receive_sms(conn, %{"from" => from, "to" => to, "content" => content, "id" => msg_id}) do
     msg = %{from: from,
             to: to,
             content: content,
