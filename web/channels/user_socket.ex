@@ -2,7 +2,7 @@ defmodule Hack2015Server.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Hack2015Server.RoomChannel
+  channel "sms", Hack2015Server.SmsChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
